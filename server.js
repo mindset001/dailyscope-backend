@@ -9,8 +9,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000", // ✅ Allow your frontend
-  origin: "https://dailyscope-332y.vercel.app",
+  origin: ['http://localhost:3000', 'https://dailyscope-332y.vercel.app'], // ✅ Allow your frontend
   credentials: true,
 }));
 
